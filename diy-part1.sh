@@ -16,4 +16,8 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+rm -rf package/helloworld
+rm -rf package/luci-app-autoipsetadder
+
 git clone https://github.com/fw876/helloworld package/helloworld
+git clone https://github.com/rufengsuixing/luci-app-autoipsetadder package/luci-app-autoipsetadder
